@@ -1,5 +1,4 @@
 # Azure Cloud Fundamentals and Azure Data Factory Pipeline Implementation
-
 ## Overview
 
 As part of my Data Engineering Internship at Celebal Technologies, I worked on understanding the basic concepts of Microsoft Azure and Azure Data Factory by building a simple end-to-end data pipeline. The main objective of this project was to learn how data can be stored, validated, and moved between Azure services using Azure Data Factory.
@@ -126,10 +125,10 @@ Through this assignment, I gained practical experience in:
 * Metadata Validation
 * Pipeline Development and Monitoring
 * IAM Role Management
-
+* Troubleshooting and Debugging
 
 ## Conclusion
 
 This assignment helped me gain practical experience with Microsoft Azure and Azure Data Factory. Through this project, I learned how to create cloud resources, configure storage services, build and execute data pipelines, perform metadata validation, and manage access using Azure IAM. Overall, it strengthened my understanding of basic data engineering concepts and gave me confidence in working with Azure-based solutions.
 
-* Troubleshooting and Debugging
+
