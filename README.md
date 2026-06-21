@@ -68,9 +68,28 @@ After execution, all activities completed successfully, and the output file was 
 
 This implementation helped me understand how metadata-driven validations can improve the reliability of data pipelines by preventing invalid data from being processed.
 
-## Key Learnings
+## Insights Gained
 
-Through this assignment, I gained practical exposure to Azure Resource Groups, Azure Storage Accounts, Azure Blob Storage, Azure Data Factory, Linked Services and Datasets, Get Metadata Activity, Copy Data Activity, Conditional Pipeline Execution, Pipeline Monitoring and Debugging, and Azure IAM Role Assignments.
+Through this assignment, I got a better understanding of how different Azure services work together to build a data pipeline. Before this project, I only had theoretical knowledge of Azure, but after performing the tasks myself, I understood how resources are created, connected, and managed in a cloud environment.
+
+One of the most useful things I learned was the importance of validating data before processing it. By using the Get Metadata activity, I understood how Azure Data Factory can check whether a file exists and verify its properties before moving data. This helped me understand why validation is an important step in real-world data pipelines.
+
+I also learned how Linked Services and Datasets work in Azure Data Factory and how they are used to connect storage resources with pipeline activities. Creating and configuring these components gave me practical experience in designing data workflows.
+
+Another important learning was understanding IAM roles and permissions. While working on role assignments, I learned how access to Azure resources is controlled and why proper permissions are required for services such as Azure Data Factory to access storage accounts.
+
+Overall, this assignment helped me gain hands-on experience with Azure services and gave me a clear understanding of the basic concepts involved in data engineering workflows.
+
+
+## Challenges and Limitations
+
+While working on this assignment, I faced a few challenges that helped me understand Azure services more deeply. One of the main challenges was configuring datasets and pipeline activities correctly in Azure Data Factory, as even small configuration issues could lead to validation errors during execution.
+
+During the IAM role assignment task, I was able to assign the Reader role and the Storage Blob Data Contributor role successfully. However, the Contributor role was not visible in my Azure for Students subscription environment, which appeared to be a permission or subscription-level limitation.
+
+Another limitation of this project is that it was performed using a sample CSV dataset with a relatively small volume of data. In real-world scenarios, data pipelines typically process much larger datasets and may involve additional components such as data transformation, scheduling, monitoring, logging, and error handling.
+
+
 
 ## Conclusion
 
