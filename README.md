@@ -89,8 +89,47 @@ During the IAM role assignment task, I was able to assign the Reader role and th
 
 Another limitation of this project is that it was performed using a sample CSV dataset with a relatively small volume of data. In real-world scenarios, data pipelines typically process much larger datasets and may involve additional components such as data transformation, scheduling, monitoring, logging, and error handling.
 
+## Observations and Output Validation
+
+After executing the pipeline successfully, I verified the output and metadata values to ensure that the pipeline was working as expected. The Get Metadata activity confirmed that the source file existed and contained the required structure before the Copy Data activity was executed.
+
+| Validation Check      | Result       |
+| --------------------- | ------------ |
+| Source File Exists    | Verified    |
+| Column Count          | 21 Columns  |
+| File Structure        | Verified    |
+| Pipeline Execution    | Succeed  |
+| Output File Generated | Verified   |
+
+The successful execution of all activities confirmed that the pipeline was correctly configured and able to move data from the source container to the destination container.
+
+## Real-World Application
+
+Although this project was implemented using a sample retail dataset, the same approach can be used in real-world organizations to automate data movement and validation processes. For example, retail companies often receive daily sales files from different stores. Before processing those files, it is important to verify that the files are available and contain valid data.
+
+Using metadata validation before data processing helps prevent failures and ensures that downstream systems receive reliable data. Through this assignment, I understood how similar workflows are implemented in practical data engineering environments.
+
+## Future Improvements
+
+This project mainly focused on data movement and metadata validation. If I continue working on this project, I would like to add data transformation steps using Azure Databricks or PySpark before loading the data into the destination location.
+
+I would also like to implement automated triggers, monitoring mechanisms, and alert notifications so that the pipeline can run automatically and notify users whenever a failure occurs. These improvements would make the solution more scalable and closer to a real-world production pipeline.
+
+## Skills Developed
+
+Through this assignment, I gained practical experience in:
+
+* Azure Resource Management
+* Azure Storage Accounts and Blob Storage
+* Azure Data Factory
+* Linked Services and Datasets
+* Metadata Validation
+* Pipeline Development and Monitoring
+* IAM Role Management
 
 
 ## Conclusion
 
-This project provided me with hands-on experience in building and managing data pipelines using Azure Data Factory. I learned how different Azure services work together to store, validate, and move data efficiently. The assignment also helped me understand metadata validation, access management, and pipeline orchestration, which are important concepts in Data Engineering.
+This assignment helped me gain practical experience with Microsoft Azure and Azure Data Factory. Through this project, I learned how to create cloud resources, configure storage services, build and execute data pipelines, perform metadata validation, and manage access using Azure IAM. Overall, it strengthened my understanding of basic data engineering concepts and gave me confidence in working with Azure-based solutions.
+
+* Troubleshooting and Debugging
